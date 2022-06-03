@@ -1,1 +1,0 @@
-# Required-parameters-for-GA4-ecommerce

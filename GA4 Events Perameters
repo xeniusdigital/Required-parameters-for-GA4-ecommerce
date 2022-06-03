@@ -1,0 +1,19 @@
+# Required-parameters-for-GA4-ecommerce
+
+If you do not include the required parameters for ecommerce-specific events (e.g. items, item_id, item_name), these events will not show up in your GA4 ecommerce reports. Instead, they will be reported as custom events.
+
+Event name          Parameters
+view_item           currency, items, value
+view_item_list      items, item_list_name, item_list_id
+select_item         items, item_list_name, item_list_id
+add_to_wishlist     currency, items, value
+add_to_cart         currency, items, value
+view_promotion      items, promotion_id, promotion_name, creative_name, creative_slot, location_id
+select_promotion    items, promotion_id, promotion_name, creative_name, creative_slot, location_id
+view_cart           currency, items, value
+remove_from_cart    currency, items, value
+begin_checkout      coupon, currency, items, value
+add_payment_info    coupon, currency, items, payment_type, value
+add_shipping_info   coupon, currency, items, shipping_tier, value
+purchase            affiliation, coupon, currency, items, transaction_id, shipping, tax, value
+refund              affiliation, coupon, currency, items, transaction_id, shipping, tax, value
